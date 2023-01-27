@@ -43,7 +43,7 @@ header nav ul li a
 margin: 15px;
 text-decoration: none;
 color:aliceblue;
-transition: 1s;
+/*transition: 1s;*/
 }
 
 header nav ul li a:hover
