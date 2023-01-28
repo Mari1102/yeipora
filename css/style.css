@@ -13,7 +13,6 @@ header
 background-color: rgb(191, 130, 245);
 position: sticky;
 top: 0;
-
 }
 
 header img
@@ -28,7 +27,6 @@ box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
 
 
 header nav ul li a 
-
 {
 margin: 15px;
 }
@@ -38,7 +36,6 @@ margin: 15px;
 header nav ul li a:hover
 {
 color:rgb(133, 104, 184);
-    
 }
 
 
@@ -50,7 +47,6 @@ section*/
 {
 text-align: center;
 background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(220, 201, 236, 0.425)),url(../img/yeiporaperros.png);
-/*background-image: url(../img/yeiporaperros.png);*/
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -567,7 +563,6 @@ padding-left: 5px;
 
 .gridGaleria  img
 {
-
 height: 100%;
 width: 100%;
 border: 2px solid rgb(162, 96, 216);
@@ -576,17 +571,12 @@ box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
 object-fit: cover;
 transition:2s;
-
 }
 
 .gridGaleria img:hover 
 {
-    transform: scale(1.1);
-   
+transform: scale(1.1);
 }
-
-
-
 
 .imagenPrimera
 {
@@ -613,11 +603,8 @@ grid-row: span 2;
 
 /*media-query*/
 
-
-
 @media screen and (max-width:1100px) 
 {
-
 .gridGaleria
 {
 grid-template-columns:repeat(3,1fr);
@@ -695,7 +682,7 @@ grid-row: span 1;
 {
 grid-row: span 1;
 }
-  
+
 .imagenVeinte
 {
 grid-row: span 1;
@@ -736,9 +723,6 @@ flex-direction: column;
 {
 margin-top: 5px;
 }
-
-
-
 }
 
 @media screen and (max-width:830px) 
@@ -752,9 +736,6 @@ font-size: 45px;
 { 
 font-size: 15px;
 }
-
-
-
 
 footer
 .imagenes
@@ -803,10 +784,7 @@ footer
 .contacto iframe
 {
 width: 50%;
-
 }
-
-  
 }
 
 
@@ -854,42 +832,65 @@ margin-right: 25px ;
 }
 .serviciosTortuguitas h1
 {
-
 font-size: 20px;
-
 }
-
-
 }
-
-
-
-
 
 /*nosotros */
 
-.nosotros
+.nosotrosFlex
 {
 display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 80vh;
 }
 
-.nosotros h2
+.nosotros
 {
-color:rgb(186, 120, 243);
-text-align: left;
-font-size: 40px;
+background-color:rgb(173, 243, 243);
+}
+.nosotros h1
+{
+padding-top: 15px;
+margin-bottom: 25px;
+background-color:aliceblue;
+color:rgb(162, 96, 216);
+font-size: 30px;
+font-weight: bolder;
+text-align: center;
+}
+
+.nosotrosContenedor h2 
+{
+color:rgb(124, 70, 172);
+text-align: center;
+font-weight: bolder;
+font-size: 20px;
+}
+
+.nosotrosContenedor div img
+{
+width: 100%;
+height: 250px;
+margin: 25px ;
+padding: 5px;
+}
+
+
+.nosotrosContenedor p
+{ 
+color:rgb(124, 70, 172);
+text-align: center;
 font-weight:bolder;
+padding: 4px;
+height: 27%;
 }
 
 .formulario 
 {
-color: blueviolet;
-margin: 25px;
-padding:25px;
+display: flex;
+justify-content: center;
+color: rgb(173, 243, 243);
+background-color: rgb(185, 118, 248);
+padding-top: 25px;
 }
 
 /* requisitos*/
@@ -900,11 +901,66 @@ width: 80%;
 height: 50vh;
 }
 
-.requisitos h5
+.primero
 {
 font-size: 30px;
 font-weight: bolder;
-color:rgb(162, 96, 216) ;
+color:rgb(162, 96, 216);
 text-align:left;
-
 }
+
+.segundo
+{ 
+font-size: 30px;
+font-weight: bolder;
+color:rgb(162, 96, 216) ;
+text-align: right;
+}
+
+.segundop
+{
+font-size: 20px;
+font-weight: bolder;
+color:rgb(162, 96, 216) ;
+text-align: right;
+} 
+
+.tercera
+{
+font-size: 30px;
+font-weight: bolder;
+color:aqua;
+text-align:left;
+}
+
+.tercerap
+{
+font-size: 20px;
+font-weight: bolder;
+color:aqua ;
+text-align:left;
+} 
+
+.cuarta
+{
+font-size: 30px;
+font-weight: bolder;
+color:rgb(162, 96, 216);
+text-align:right;
+}
+
+.parraforequisitos
+{
+font-size: 20px;
+color:rgb(162, 96, 216);
+margin:25px;
+padding:25px;
+}
+
+
+
+
+
+
+
+
