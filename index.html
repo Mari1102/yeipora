@@ -1,104 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <!--CSS-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>YEIPORA</title>
 </head>
 <body>
-    <header >
-        <img src=./img/logoyeipora.jpg alt="logoyeipora">
-        <nav>
-                <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./pages/Servicios.html">SERVICIOS</a></li>
-                <li><a href="./pages/Galeria.html">GALERIA</a></li>
-                <li><a href="./pages/Nosotros.html">NOSOTROS</a></li>
-                <li><a href="./pages/Requisitos.html">REQUISITOS</a></li>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+        <a href="./index.html"><img src=./img/logoyeipora.jpg alt="logoyeipora"></a> 
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="./index.html">INICIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/Servicios.html">SERVICIOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/Galeria.html">GALERIA</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/Nosotros.html">NOSOTROS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./pages/Requisitos.html">REQUISITOS</a>
+            </li>
             </ul>
-        </nav>
+        </div>
+        </div>
+    </nav>
     </header>
-
     <main>
-            
-        <section class="hero">
-            <h1> Tu perro es tu familia </h1>            
-            <h2>QUE TU PERRO TAMBIEN DISFRUTE TUS VACACIONES</h2>
-            <a href="#pie">¡CONTACTANOS!</a>
-        </section>
+    <section class="hero">
+        <h1>Tu perro es tu familia</h1>
+        <h2>QUE TU PERRO TAMBIEN DISFRUTE TUS VACACIONES</h2>
+        <a href="#pie">¡CONTACTANOS!</a>
+    </section>
 
-        <section class="presentacion">
-         <img src="./img/yeiporaentrada.png" alt="entradayeipora">
-         <div>
-         <h2>¡BIENVENIDOS A YEIPORA!</h2>
-         <p> SOMOS YEIPORA. Un servicio de hospedaje en libertad para tu mascota y Spa canino de excelencia.Nuestro objetivo es proporcionar un servicio diferente en el que tu mascota pase una estadía vacacional sensacional y se divierta con sus pares.</p>
-         </div>
-        </section>
-        
-        <section class="caracteristicas">
-            
-            <h2>NOS CARACTERIZAMOS POR:</h2>
-            <div class="caracteristicasFlex">
-                <div>
-                    <img src="./img/confianza.jpg" alt="responsabilidad"  >
-                    <h3>RESPONSABILIDAD</h3>
-                    <p>
-                    Separados en grupos por tamaño y aptitud.
-                    Atencion vererinaria ante cualquier emergencia.
-                    </p>
-                </div>
+    <section class="presentacion">
+        <img src="./img/yeiporaentrada.png" alt="entradayeipora" />
+        <div>
+        <h2>¡BIENVENIDOS A YEIPORA!</h2>
+        <p>
+            SOMOS YEIPORA. Un servicio de hospedaje en libertad para tu mascota
+            y Spa canino de excelencia.Nuestro objetivo es proporcionar un
+            servicio diferente en el que tu mascota pase una estadía vacacional
+            sensacional y se divierta con sus pares.
+          </p>
+        </div>
+      </section>
 
-                <div>
-                    <img src="./img/responsabilidad.jpg"alt="confianza">
-                    <h3>CONFIANZA</h3>
-                    <p>Supervision las 24hs.
-                    Sin restricciones,ni caniles. 
-                    Predio de mas de 10.000 metros cuadrados</p>
-                </div>
+      <section class="caracteristicas">
+        <h2>NOS CARACTERIZAMOS POR:</h2>
+        <div class="caracteristicasFlex">
+          <div>
+            <img src="./img/confianza.jpg" alt="responsabilidad" />
+            <h3>RESPONSABILIDAD</h3>
+            <p>
+              Separados en grupos por tamaño y aptitud. Atencion vererinaria
+              ante cualquier emergencia.
+            </p>
+          </div>
 
-                <div>
-                    <img src="./img/calidad.jpg" alt="calidad">
-                    <h3>CALIDAD</h3>
-                    <p>
-                    Instalaciones adecuadas para el rubro.
-                    Personal capacitado para cada servicio.
-                    </p>
-                </div>
-            </div>
+          <div>
+            <img src="./img/responsabilidad.jpg" alt="confianza" />
+            <h3>CONFIANZA</h3>
+            <p>
+              Supervision las 24hs. Sin restricciones,ni caniles. Predio de mas
+              de 10.000 metros cuadrados
+            </p>
+          </div>
 
-        </section>
-        <section class="videoInformativo">
-            <p>Compartimos este video  de curiosidades de nuestros amigos de 4 patas</p>
-            <iframe width="" height="" src="https://www.youtube.com/embed/Se47tkmvwRw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </section>
+          <div>
+            <img src="./img/calidad.jpg" alt="calidad" />
+            <h3>CALIDAD</h3>
+            <p>
+              Instalaciones adecuadas para el rubro. Personal capacitado para
+              cada servicio.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="videoInformativo">
+        <p>
+          Compartimos este video de curiosidades de nuestros amigos de 4 patas
+        </p>
+        <iframe
+          width=""
+          height=""
+          src="https://www.youtube.com/embed/Se47tkmvwRw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
 
-        
-     </main>
-
-
-        <footer id="pie">
-            <div class="imagenes">
-                <img src=./img/logoyeipora.jpg alt="logoyeipora">
-                <div class="redesSociales">  
-                <h2>Contactanos a traves de:</h2>         
-                <a href="https://instragram.com/yeiporaguarderiacanina?igshid=OGQ2MjdiOTE"target="_blank"><img src="./img/instagram.png" alt="logo instragram"></a>
-                <a href=""><img src="./img/whatsapp.png" alt="logo whatsapp"></a>
-                <a href=""><img src="./img/mail.png" alt="logo email"></a>
-                </div>
-            </div>
-            <div class="contacto">
-                <div class="direcciones">
-                    <h3>cel:1136188206</h3>
-                    <h3>direccion:Juan Pedro Echagüe 3200 (Del Viso, Provincia de BSAS)</h3>
-                    <h3>mail:yeiporacentrointergralparamascotas@hotmail.com</h3>
-                </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7105146888207!2d-58.79837626849699!3d-34.48486729094067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc99122af93925%3A0xe3d463d85c9d0a99!2sJuan%20Pedro%20Echag%C3%BCe%203200%2C%20Del%20Viso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671879179613!5m2!1ses-419!2sar" width="" height="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-            </div>
-        </footer>
-    
-</body>
+    <footer id="pie">
+      <div class="imagenes">
+        <img src=./img/logoyeipora.jpg alt="logoyeipora">
+        <div class="redesSociales">
+          <h2>Contactanos a traves de:</h2>
+          <a
+            href="https://instragram.com/yeiporaguarderiacanina?igshid=OGQ2MjdiOTE"
+            target="_blank"
+            ><img src="./img/instagram.png" alt="logo instragram"
+          /></a>
+          <a href=""><img src="./img/whatsapp.png" alt="logo whatsapp" /></a>
+          <a href=""><img src="./img/mail.png" alt="logo email" /></a>
+        </div>
+      </div>
+      <div class="contacto">
+        <div class="direcciones">
+          <h3>cel:1136188206</h3>
+          <h3>
+            direccion:Juan Pedro Echagüe 3200 (Del Viso, Provincia de BSAS)
+          </h3>
+          <h3>mail:yeiporacentrointergralparamascotas@hotmail.com</h3>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.7105146888207!2d-58.79837626849699!3d-34.48486729094067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc99122af93925%3A0xe3d463d85c9d0a99!2sJuan%20Pedro%20Echag%C3%BCe%203200%2C%20Del%20Viso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671879179613!5m2!1ses-419!2sar"
+          width=""
+          height=""
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
