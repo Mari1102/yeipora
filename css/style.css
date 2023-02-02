@@ -141,6 +141,7 @@ padding: 25px;
 {
 background-image: url(../img/fondotttt.jpg); 
 background-repeat: repeat;
+padding-bottom: 25px;
 }
 
 .caracteristicas h2 
@@ -173,6 +174,7 @@ height: 250px;
 color:rgb(124, 70, 172);
 text-align: center;
 background-color:rgb(186, 245, 225);
+font-size: 20px;
 }
 
 .caracteristicas p
