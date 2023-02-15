@@ -1,0 +1,639 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Laila&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Laila', sans-serif; }
+
+/*-----header-----*/
+header {
+  background-color: #bf82f5;
+  position: sticky;
+  top: 0; }
+
+nav div a img {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75); }
+
+nav div ul li a {
+  margin: 15px; }
+  nav div ul li a:hover {
+    color: #8568b8; }
+
+/*-----HERO-----*/
+.hero {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(220, 201, 236, 0.425)), url(../img/yeiporaperros.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .hero .hero h1 {
+    color: #baf5e1;
+    font-size: 60px;
+    padding: 25px 25px;
+    margin: bottom 15px; }
+  .hero .hero h2 {
+    background-color: rgba(161, 83, 238, 0.5);
+    margin: 15px 15px 15px 15px;
+    text-align: center;
+    color: #baf5e1;
+    font-size: 30px;
+    font-weight: bolder; }
+  .hero .hero a {
+    color: #baf5e1;
+    text-decoration: none;
+    background-color: #b670f3;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+    border: solid #baf5e1;
+    transition: 1s; }
+    .hero .hero a:hover {
+      color: #b670f3;
+      background-color: #baf5e1; }
+
+/*presentacion*/
+.presentacion img {
+  height: 85%;
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: solid #ba78f3; }
+
+.presentacion div {
+  padding: 30px; }
+  .presentacion div h2 {
+    color: #7c46ac;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-style: italic; }
+  .presentacion div p {
+    color: #7c46ac;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 25px; }
+
+/*------CARACTERISTICAS-----*/
+.caracteristicas {
+  background-image: url(../img/fondotttt.jpg);
+  background-repeat: repeat;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-around; }
+  .caracteristicas h2 {
+    color: #7c46ac;
+    text-align: center;
+    padding: 25px; }
+  .caracteristicas div {
+    width: 234px;
+    height: 400px;
+    border: solid #ba78f3; }
+    .caracteristicas div img {
+      width: 228px;
+      height: 250px; }
+    .caracteristicas div h3 {
+      color: #7c46ac;
+      text-align: center;
+      background-color: #baf5e1;
+      font-size: 20px; }
+    .caracteristicas div p {
+      background-color: rgba(240, 237, 243, 0.5);
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      padding: 4px;
+      height: 27%; }
+  .caracteristicas div {
+    width: 234px;
+    height: 400px;
+    border: solid #ba78f3; }
+    .caracteristicas div img {
+      width: 228px;
+      height: 250px; }
+    .caracteristicas div h3 {
+      color: #7c46ac;
+      text-align: center;
+      background-color: #baf5e1;
+      font-size: 20px; }
+    .caracteristicas div p {
+      background-color: rgba(240, 237, 243, 0.5);
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      padding: 4px;
+      height: 27%; }
+  .caracteristicas div {
+    width: 234px;
+    height: 400px;
+    border: solid #ba78f3; }
+    .caracteristicas div img {
+      width: 228px;
+      height: 250px; }
+    .caracteristicas div h3 {
+      color: #7c46ac;
+      text-align: center;
+      background-color: #baf5e1;
+      font-size: 20px; }
+    .caracteristicas div p {
+      background-color: rgba(240, 237, 243, 0.5);
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      padding: 4px;
+      height: 27%; }
+
+.videoinformativo {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: #baf5e1; }
+  .videoinformativo p {
+    color: #7c46ac;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px; }
+  .videoinformativo iframe {
+    margin-top: 25px;
+    padding: 25px;
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.galeria {
+  height: 100%;
+  background-color: #cca7ed;
+  padding-bottom: 10px; }
+  .galeria h1 {
+    padding-top: 15px;
+    margin-bottom: 25px;
+    background-color: aliceblue;
+    color: #a260d8;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center; }
+  .galeria div .gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-auto-rows: 300px;
+    gap: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #a260d8;
+    box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+    transition: 2s; }
+    .galeria div .gridGaleria:hover {
+      transform: scale(1.1); }
+    .galeria div .gridGaleria img .imagenPrimera {
+      grid-row: span 2;
+      grid-column: span 2; }
+    .galeria div .gridGaleria img .imagenSegunda {
+      grid-column: span 2; }
+    .galeria div .gridGaleria img .imagenSexta {
+      grid-row: span 2;
+      grid-column: span 2; }
+    .galeria div .gridGaleria img .imagenDieciocho {
+      grid-row: span 2; }
+
+/*--------------SERVICIOS-----------*/
+.serviciosTortuguitas {
+  background-image: url(../img/patasdeperros.jpg);
+  background-repeat: repeat; }
+
+h1 {
+  padding-top: 15px;
+  margin-bottom: 25px;
+  background-color: aliceblue;
+  color: #a260d8;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center; }
+
+h2 {
+  color: #a260d8;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: aliceblue;
+  margin: 15px; }
+
+.serviciosTortuguitasContenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  animation-name: servicios;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial; }
+  .serviciosTortuguitasContenedor .hospedaje img {
+    height: 250px; }
+  .serviciosTortuguitasContenedor div h2 {
+    color: #a260d8;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    margin: 15px; }
+  .serviciosTortuguitasContenedor div h3 {
+    margin-top: 15px;
+    color: #a260d8;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px;
+    text-align: center; }
+  .serviciosTortuguitasContenedor div h3 {
+    margin-top: 15px;
+    color: #a260d8;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px;
+    text-align: center; }
+  .serviciosTortuguitasContenedor div h3 {
+    margin-top: 15px;
+    color: #a260d8;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px;
+    text-align: center; }
+  .serviciosTortuguitasContenedor .club {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 25px 25px 25px 25px;
+    padding: 10px 10px 10px 10px;
+    border: solid #a260d8;
+    background: #22c1c3;
+    background: linear-gradient(0deg, #22c1c3 21%, #21f2b4 61%);
+    width: 95%; }
+    .serviciosTortuguitasContenedor .club img {
+      height: 250px; }
+    .serviciosTortuguitasContenedor .club div h2 {
+      color: #a260d8;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bolder;
+      background-color: aliceblue;
+      margin: 15px; }
+    .serviciosTortuguitasContenedor .club div h3 {
+      margin-top: 15px;
+      color: #a260d8;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px;
+      text-align: center; }
+    .serviciosTortuguitasContenedor .club div h3 {
+      margin-top: 15px;
+      color: #a260d8;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px;
+      text-align: center; }
+    .serviciosTortuguitasContenedor .club div h3 {
+      margin-top: 15px;
+      color: #a260d8;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px;
+      text-align: center; }
+  .serviciosTortuguitasContenedor .baño {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 25px 25px 25px;
+    padding: 10px 10px 10px 10px;
+    border: solid #a260d8;
+    background: linear-gradient(0deg, #22c1c3 21%, #21f2b4 61%);
+    width: 95%; }
+    .serviciosTortuguitasContenedor .baño img {
+      height: 250px; }
+    .serviciosTortuguitasContenedor .baño div h2 {
+      color: #a260d8;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bolder;
+      background-color: aliceblue;
+      margin: 15px; }
+    .serviciosTortuguitasContenedor .baño div p {
+      margin-top: 25px;
+      color: #a260d8;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align: center; }
+    .serviciosTortuguitasContenedor .baño div h3 {
+      margin-top: 15px;
+      color: #a260d8;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px;
+      text-align: center; }
+  .serviciosTortuguitasContenedor .traslados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 25px 25px 25px 25px;
+    padding: 10px 10px 10px 10px;
+    border: solid #a260d8;
+    background: linear-gradient(0deg, #22c1c3 21%, #21f2b4 61%);
+    width: 95%; }
+    .serviciosTortuguitasContenedor .traslados img {
+      height: 250px; }
+    .serviciosTortuguitasContenedor .traslados div h2 {
+      color: #a260d8;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bolder;
+      background-color: aliceblue;
+      margin: 15px; }
+    .serviciosTortuguitasContenedor .traslados div p {
+      margin-top: 25px;
+      color: #a260d8;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align: center; }
+    .serviciosTortuguitasContenedor .traslados div h3 {
+      margin-top: 15px;
+      color: #a260d8;
+      text-align: left;
+      font-size: 20px;
+      font-weight: bolder;
+      margin: 15px;
+      text-align: center; }
+
+.serviciosCaba {
+  background-image: url(../img/fondotttt.jpg);
+  background-repeat: repeat;
+  padding: 10px; }
+  .serviciosCaba h2 {
+    color: #a260d8;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .serviciosCaba .sedeCaba {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+    border: solid #a260d8;
+    background: linear-gradient(0deg, #22c1c3 13%, #d893e9 91%);
+    animation-name: servicios;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial; }
+    .serviciosCaba .sedeCaba img {
+      height: 250px;
+      width: 250px;
+      padding: 10px 10px 10px 10px; }
+    .serviciosCaba .sedeCaba div h2 {
+      color: #a260d8;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bolder;
+      background-color: aliceblue;
+      margin-left: 15px;
+      margin-right: 15px; }
+    .serviciosCaba .sedeCaba div p {
+      margin-top: 25px;
+      color: aliceblue;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align: center;
+      padding-right: 15px; }
+    .serviciosCaba .sedeCaba div h3 {
+      color: aliceblue;
+      font-size: 20px;
+      font-weight: bolder;
+      text-align: center;
+      margin-top: 15px; }
+
+/*------NOSOTROS--------*/
+.nosotros {
+  background-color: #adf3f3; }
+  .nosotros h1 {
+    padding-top: 15px;
+    margin-bottom: 25px;
+    background-color: aliceblue;
+    color: #a260d8;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center; }
+  .nosotros .nosotrosContenedor {
+    padding: 5px;
+    justify-content: space-evenly; }
+    .nosotros .nosotrosContenedor .nosotrosFlex {
+      display: flex; }
+      .nosotros .nosotrosContenedor .nosotrosFlex div img {
+        width: 100%;
+        height: 250px;
+        padding: 15px; }
+      .nosotros .nosotrosContenedor .nosotrosFlex h2 {
+        color: #7c46ac;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px; }
+      .nosotros .nosotrosContenedor .nosotrosFlex p {
+        color: #7c46ac;
+        text-align: center;
+        font-weight: bolder;
+        padding: 4px;
+        height: 27%; }
+    .nosotros .nosotrosContenedor div img {
+      width: 100%;
+      height: 250px;
+      padding: 15px; }
+    .nosotros .nosotrosContenedor div h2 {
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px; }
+    .nosotros .nosotrosContenedor div p {
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      padding: 4px;
+      height: 27%; }
+    .nosotros .nosotrosContenedor div img {
+      width: 100%;
+      height: 250px;
+      padding: 15px; }
+    .nosotros .nosotrosContenedor div h2 {
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px; }
+    .nosotros .nosotrosContenedor div p {
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      padding: 4px;
+      height: 27%; }
+    .nosotros .nosotrosContenedor div img {
+      width: 100%;
+      height: 250px;
+      padding: 15px; }
+    .nosotros .nosotrosContenedor div h2 {
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      font-size: 20px; }
+    .nosotros .nosotrosContenedor div p {
+      color: #7c46ac;
+      text-align: center;
+      font-weight: bolder;
+      padding: 4px;
+      height: 27%; }
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  color: #adf3f3;
+  background-color: #b976f8;
+  padding-top: 25px;
+  padding-bottom: 25px; }
+
+/*------------REQUISITOS-------*/
+.requisitos .carousel-item div img {
+  width: 80%;
+  height: 50vh; }
+
+.requisitos .carousel-item div .primero {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #a260d8;
+  text-align: left; }
+
+.requisitos .carousel-item div img {
+  width: 80%;
+  height: 50vh; }
+
+.requisitos .carousel-item div .segundo {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #a260d8;
+  text-align: left; }
+
+.requisitos .carousel-item div .segundop {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #a260d8;
+  text-align: right; }
+
+.requisitos .carousel-item div img {
+  width: 80%;
+  height: 50vh; }
+
+.requisitos .carousel-item div .tercera {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #a260d8;
+  text-align: left; }
+
+.requisitos .carousel-item div .tercerap {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #a260d8;
+  text-align: right; }
+
+.requisitos .carousel-item div img {
+  width: 80%;
+  height: 50vh; }
+
+.requisitos .carousel-item div .cuarta {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #a260d8;
+  text-align: left; }
+
+.parraforequisitos h1 {
+  font-size: 25px;
+  border: solid;
+  color: #a260d8;
+  margin: 25px;
+  padding: 25px; }
+
+.parraforequisitos p {
+  font-size: 20px;
+  color: #a260d8;
+  margin: 25px;
+  padding: 25px; }
+
+/*------footer-----*/
+footer {
+  background-image: url(../img/patadeperro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%; }
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; }
+    footer div img {
+      width: 150px;
+      height: 150px;
+      margin: 5px; }
+  footer div {
+    display: flex;
+    justify-content: space-between; }
+    footer div h2 {
+      color: #baf5e1;
+      margin-right: 25px; }
+    footer div a {
+      width: 50px;
+      height: 50px;
+      margin: 10px; }
+    footer div a {
+      width: 50px;
+      height: 50px;
+      margin: 10px; }
+    footer div a {
+      width: 50px;
+      height: 50px;
+      margin: 10px; }
+  footer div div h3 {
+    background-color: rgba(196, 245, 238, 0.6);
+    color: #7c46ac;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-left: 25px; }
+  footer div iframe {
+    width: 20%;
+    height: 100%;
+    margin-right: 25px;
+    margin-top: 10px;
+    padding-bottom: 10px; }

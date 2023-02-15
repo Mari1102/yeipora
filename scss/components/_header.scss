@@ -1,0 +1,28 @@
+/*-----header-----*/
+header{
+        background-color: rgb(191, 130, 245);
+        position: sticky;
+        top: 0;}
+nav{
+    div{
+        a img{
+            width: 80px;
+            height:80px;
+            margin: 5px;
+            box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
+            -moz-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
+
+        }
+    }
+    div{
+        ul{
+            li{
+                a{
+                    margin: 15px;
+                    &:hover{color:rgb(133, 104, 184);}
+                }
+            }
+        }
+    }
+}
