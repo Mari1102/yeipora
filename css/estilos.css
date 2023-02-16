@@ -17,17 +17,17 @@
   margin: 15px;
   text-align: center; }
 
-.caracteristicas .caracteristicasFlex div img, .caracteristicas div img {
+.caracteristicas .caracteristicasFlex div img {
   width: 228px;
   height: 250px; }
 
-.caracteristicas .caracteristicasFlex div h3, .caracteristicas div h3 {
+.caracteristicas .caracteristicasFlex div h3 {
   color: #7c46ac;
   text-align: center;
   background-color: #baf5e1;
   font-size: 20px; }
 
-.caracteristicas .caracteristicasFlex p, .caracteristicas div p {
+.caracteristicas .caracteristicasFlex div p {
   background-color: rgba(240, 237, 243, 0.5);
   color: #7c46ac;
   text-align: center;
@@ -62,9 +62,6 @@ footer .imagenes img, footer .imagenes .redesSociales a img {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-body {
-  font-family: 'Laila', sans-serif; }
 
 header {
   background-color: #bf82f5;
@@ -138,19 +135,18 @@ header {
     margin-left: 20px;
     margin-bottom: 20px;
     border: solid #b670f3; }
-  .presentacion div p::first-letter {
-    padding: 30px; }
-    .presentacion div p::first-letter h2 {
-      color: #7c46ac;
-      text-align: center;
-      font-size: 30px;
-      font-weight: bolder;
-      margin-top: 20px;
-      font-style: italic; }
-    .presentacion div p::first-letter p {
-      color: #983bee;
-      font-size: 30px;
-      font-style: italic; }
+  .presentacion div p h2 {
+    color: #7c46ac;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-top: 20px;
+    font-style: italic; }
+  .presentacion p {
+    color: #983bee;
+    font-size: 30px;
+    font-style: italic;
+    padding: 25px; }
 
 .caracteristicas {
   background-image: url(../img/fondotttt.jpg);
@@ -162,21 +158,34 @@ header {
     padding: 25px; }
   .caracteristicas .caracteristicasFlex {
     display: flex;
-    flex-direction: 0;
-    justify-content: space-around;
-    align-items: 0; }
+    justify-content: space-around; }
     .caracteristicas .caracteristicasFlex div {
       width: 234px;
       height: 400px;
       border: solid #b670f3; }
-  .caracteristicas div {
-    width: 234px;
-    height: 400px;
-    border: solid #b670f3; }
-  .caracteristicas div {
-    width: 234px;
-    height: 400px;
-    border: solid #b670f3; }
+      .caracteristicas .caracteristicasFlex div img {
+        width: 228px;
+        height: 250px; }
+      .caracteristicas .caracteristicasFlex div h3 {
+        color: #7c46ac;
+        text-align: center;
+        background-color: #baf5e1;
+        font-size: 20px; }
+    .caracteristicas .caracteristicasFlex div {
+      width: 234px;
+      height: 400px;
+      border: solid #b670f3; }
+      .caracteristicas .caracteristicasFlex div p {
+        background-color: rgba(240, 237, 243, 0.5);
+        color: #7c46ac;
+        text-align: center;
+        font-size: 14px;
+        padding: 4px;
+        height: 27%; }
+    .caracteristicas .caracteristicasFlex div {
+      width: 234px;
+      height: 400px;
+      border: solid #b670f3; }
 
 .videoInformativo {
   display: flex;
@@ -375,27 +384,28 @@ div p {
     grid-auto-rows: 300px;
     gap: 20px;
     padding-right: 5px;
-    padding-left: 5px;
-    height: 100%;
-    width: 100%;
-    border: 2px solid #a260d8;
-    box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    object-fit: cover;
-    transition: 2s; }
-    .galeria .gridGaleria:hover {
-      transform: scale(1.1); }
-    .galeria .gridGaleria .imagenPrimera {
-      grid-row: span 2;
-      grid-column: span 2; }
-    .galeria .gridGaleria .imagenSegunda {
-      grid-column: span 2; }
-    .galeria .gridGaleria .imagenSenta {
-      grid-row: span 2;
-      grid-column: span 2; }
-    .galeria .gridGaleria .imagenDieciocho {
-      grid-row: span 2; }
+    padding-left: 5px; }
+    .galeria .gridGaleria .div img {
+      height: 100%;
+      width: 100%;
+      border: 2px solid #a260d8;
+      box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+      object-fit: cover;
+      transition: 2s; }
+      .galeria .gridGaleria .div img:hover {
+        transform: scale(1.1); }
+      .galeria .gridGaleria .div img div .imagenPrimera {
+        grid-row: span 2;
+        grid-column: span 2; }
+      .galeria .gridGaleria .div img div .imagenSegunda {
+        grid-column: span 2; }
+      .galeria .gridGaleria .div img div .imagenSenta {
+        grid-row: span 2;
+        grid-column: span 2; }
+      .galeria .gridGaleria .div img div .imagenDieciocho {
+        grid-row: span 2; }
 
 .nosotros h1 {
   padding-top: 15px;
@@ -409,15 +419,13 @@ div p {
 .nosotros .nosotrosContenedor {
   background-color: #adf3f3;
   padding: 5px;
+  display: flex;
   justify-content: space-evenly; }
   .nosotros .nosotrosContenedor .nosotrosFlex {
     display: flex; }
 
 .formulario {
   display: flex;
-  flex-direction: 0;
-  justify-content: center;
-  align-items: 0;
   justify-content: center;
   color: #adf3f3;
   background-color: #b976f8;
@@ -476,18 +484,19 @@ div p {
   color: #a260d8;
   text-align: right; }
 
-.parraforequisitos h1 {
-  font-size: 25px;
-  font-weight: bolder;
-  color: #a260d8;
-  padding: 25px; }
-
-.parraforequisitos p {
-  background-color: #baf5e1;
-  font-size: 20px;
-  color: #a260d8;
-  margin: 25px;
-  padding: 25px; }
+.parraforequisitos {
+  background-color: #af6bee; }
+  .parraforequisitos h1 {
+    font-size: 25px;
+    background-color: #adf1db;
+    font-weight: bolder;
+    color: #a260d8;
+    padding: 25px; }
+  .parraforequisitos p {
+    background-color: #adf1db;
+    font-size: 20px;
+    color: #a260d8;
+    padding: 25px; }
 
 footer {
   background-image: url(../img/patadeperro.png);
@@ -502,7 +511,7 @@ footer {
     align-items: 0;
     padding: 20px; }
     footer .imagenes .redesSociales h2 {
-      color: #baf5e1;
+      color: #c179e2;
       margin-right: 25px; }
   footer .contacto {
     display: flex;

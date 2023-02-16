@@ -50,7 +50,7 @@
                 border: solid rgb(182,112,243);
 
                }
-               div p::first-letter {padding: 30px;
+               div p
                    h2{
                     color:rgb(124, 70, 172);
                     text-align: center;
@@ -63,65 +63,65 @@
                    p{color:rgb(152, 59, 238);
                     font-size:30px;
                     font-style: italic;
+                    padding: 25px;
 
                    }
                }
 
-}
-.caracteristicas {background-image: url(../img/fondotttt.jpg); 
+
+.caracteristicas{background-image: url(../img/fondotttt.jpg); 
                 background-repeat: repeat;
                 padding-bottom: 25px;
                 h2{
                     color:rgb(124, 70, 172);
                     text-align: center;
                     padding: 25px;
-
                 }
-                .caracteristicasFlex{@include flex (flex,0,space-around,0);
-                                        div {width: 234px;
-                                        height: 400px;
-                                        border:solid rgb(182,112,243);
-                                        img{@extend %caracteristicasimg;
+                .caracteristicasFlex{display: flex;
+                                     justify-content: space-around;
 
+                                        div {
+                                            width: 234px;
+                                            height: 400px;
+                                            border:solid rgb(182,112,243);
+                                                img{ width: 228px;
+                                                    height: 250px;} 
+                                                 h3{color:rgb(124, 70, 172);
+                                                    text-align: center;
+                                                    background-color:rgb(186, 245, 225);
+                                                    font-size: 20px;
+                                                    }
+                                                p{@extend %caracteristicasp;
+                                                }
+                                            }
+                                            div{width: 234px;
+                                                height: 400px;
+                                                border:solid rgb(182,112,243);
+                                             img{@extend %caracteristicasimg;
+                                                }
+                                             h3{@extend %caracteristicash3;
+                                            }
+                                            p{background-color: rgba(240, 237, 243, 0.5);
+                                                color:rgb(124, 70, 172);
+                                                text-align: center;
+                                                font-size: 14px;
+                                                padding: 4px;
+                                                height: 27%;
+                                            }
                                         }
-                                        h3{@extend %caracteristicash3;
+                                            div{width: 234px;
+                                                height: 400px;
+                                                border:solid rgb(182,112,243);
+                                                img{@extend %caracteristicasimg;
+                                                }
+                                                h3{@extend %caracteristicash3;
+                                                }
+                                                p{@extend %caracteristicasp;
+                                                }
                                             }
 
-
-                                        }
-                                        p{@extend %caracteristicasp;
-
-                                        }
-                                    }
-                                    div{width: 234px;
-                                        height: 400px;
-                                        border:solid rgb(182,112,243);
-                                        img{@extend %caracteristicasimg;
-
-                                        }
-                                        h3{@extend %caracteristicash3;
-
-                                        }
-                                        p{@extend %caracteristicasp;
-
-                                        }
-
-                                    }
-                                    div{width: 234px;
-                                        height: 400px;
-                                        border:solid rgb(182,112,243);
-                                        img{@extend %caracteristicasimg;
-
-                                        }
-                                        h3{@extend %caracteristicash3;
-
-                                        }
-                                        p{@extend %caracteristicasp;
-
-                                        }
-                                    }
-
                 }
+            }
 .videoInformativo{@include flex (flex,0,0,center);
     padding: 25px;
     background-color: rgb(186, 245, 225);
@@ -350,10 +350,13 @@ height: 100%;
         }
     }
 
-.galeria{height: 100%;
+.galeria{
+    
+    height: 100%;
     background-color:rgb(204, 167, 237);
     padding-bottom: 10px;
-    h1{padding-top: 15px;
+    h1{
+        padding-top: 15px;
         margin-bottom: 25px;
         background-color:aliceblue;
         color:rgb(162, 96, 216);
@@ -362,112 +365,113 @@ height: 100%;
         text-align: center;
 
     }
-    .gridGaleria{display: grid;
+  
+       .gridGaleria{
+        display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows:400px 400px 400px 400px 400px;
         grid-auto-rows: 300px;
         gap: 20px;
         padding-right: 5px;
         padding-left: 5px;
-        height: 100%;
-width: 100%;
-border: 2px solid rgb(162, 96, 216);
-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
--webkit-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
-object-fit: cover;
-transition:2s;
-&:hover{
-    transform: scale(1.1);
-    }
-        .imagenPrimera{grid-row: span 2;
-            grid-column: span 2;
+                            .div img{
+                                    height: 100%;
+                                    width: 100%;
+                                    border: 2px solid rgb(162, 96, 216);
+                                    box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
+                                    -webkit-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
+                                    -moz-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
+                                    object-fit: cover;
+                                    transition:2s;
+                                    &:hover{
+                                    transform: scale(1.1);
+                                    }
+                                    div{
+                                        .imagenPrimera{grid-row: span 2;
+                                        grid-column: span 2;
+                                        }
+                                    }
+                                    div{
+                                        .imagenSegunda{grid-column: span 2;
+                                                        }
+                                        }
+                                    div {
+                                        .imagenSenta{grid-row: span 2;
+                                        grid-column: span 2;}
 
-        }
-        .imagenSegunda{grid-column: span 2;
+                                        }
+                                    div{
+                                        .imagenDieciocho{grid-row: span 2;}
 
-        }
-       
-        .imagenSenta{grid-row: span 2;
-            grid-column: span 2;
-
-        }
-        .imagenDieciocho{grid-row: span 2;
-
-        }
+                                        }
         
+                            }
     }
-
 }
+
 .nosotros{
-    h1{padding-top: 15px;
+          h1{
+        padding-top: 15px;
         margin-bottom: 25px;
         background-color:aliceblue;
         color:rgb(162, 96, 216);
         font-size: 30px;
         font-weight: bolder;
         text-align: center;
-
-    }
-    .nosotrosContenedor{background-color:rgb(173, 243, 243);padding: 5px;
-        justify-content:space-evenly;
-
-        .nosotrosFlex{display: flex;
-            div{
-                img{@extend %nosotrosimg;
-
-                }
-                h2{@extend %nosotrosh2;
-
-                }
-                p{@extend %nosotrosp;
-
-                }
-            }
-            div{
-                img{@extend %nosotrosimg;
-
-                }
-                h2{@extend %nosotrosh2;
-
-                }
-                p{@extend %nosotrosp;
-
-                }
-
-            }
-            div{
-                img{@extend %nosotrosimg;
-
-                }
-                h2{@extend %nosotrosh2;
-
-                }
-                p{@extend %nosotrosp;
-
-                }
-            }
-            div{
-                img{@extend %nosotrosimg;
-
-                }
-                h2{@extend %nosotrosh2;
-
-                }
-                p{@extend %nosotrosp;
-
-                }
-            }
+         }
+    
+        .nosotrosContenedor{
+            
+            background-color:rgb(173, 243, 243);
+            padding: 5px;
+            display: flex;
+            justify-content:space-evenly;
+         
+                        .nosotrosFlex{display: flex;
+                                                div{
+                                                    img{@extend %nosotrosimg;
+                                                    }
+                                                    h2{@extend %nosotrosh2;
+                                                    }
+                                                    p{@extend %nosotrosp;
+                                                    }
+                                                }
+                                                div{
+                                                    img{@extend %nosotrosimg;
+                                                    }
+                                                    h2{@extend %nosotrosh2;
+                                                      }
+                                                    p{@extend %nosotrosp;
+                                                     }
+                                                    }
+                                                div{
+                                                    img{@extend %nosotrosimg;
+                                                    }
+                                                    h2{@extend %nosotrosh2;
+                                                    }
+                                                    p{@extend %nosotrosp;
+                                                    }
+                                                }
+                                                div{
+                                                    img{@extend %nosotrosimg;
+                                                    }
+                                                    h2{@extend %nosotrosh2;
+                                                    }
+                                                    p{@extend %nosotrosp;
+                                                    }
+                                                }
+                                            }
         }
-   }
-}
-.formulario{@include flex (flex,0,center,0);
+}       
+
+
+.formulario{
+    display:flex;
     justify-content: center;
     color: rgb(173, 243, 243);
     background-color: rgb(185, 118, 248);
     padding-top: 25px;
     padding-bottom: 25px;
-  
 }
 .requisitos{
            div{
@@ -542,18 +546,25 @@ transition:2s;
             }
         }
     }
-.parraforequisitos{
-    h1{font-size: 25px;
-        font-weight:bolder;
-        color:rgb(162, 96, 216);
-        padding:25px;
+    .parraforequisitos{
+            background-color:rgb(175, 107, 238) ;
+            h1{font-size: 25px;
+            background-color: rgb(173, 241, 219);
+            font-weight:bolder;
+            color:rgb(162, 96, 216);
+            padding:25px;
+        }
 
+     
+           p{
+            background-color: rgb(173, 241, 219);
+            font-size: 20px;
+            color:rgb(162, 96, 216);
+             
+             padding:25px;
+            }
+        
     }
-    p{background-color: rgb(186,245,225);
-        font-size: 20px;
-        color:rgb(162, 96, 216);
-        margin:25px;
-        padding:25px;
 
-    }
-}
+
+    
