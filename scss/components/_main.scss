@@ -7,13 +7,11 @@
         background-attachment: fixed;
         height: 80vh;
         width:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (flex,column,center,center);
+        
         .hero h1{
-                color:rgb(186, 245, 225);
-                font-size: 60px;
+                color:nth($colores,1);
+                font-size: nth($font-size,3);                                
                 padding: 25px 25px;
                 margin: bottom 15px;
                 }
@@ -40,9 +38,10 @@
                         }
                 }
 }
-/*presentacion*/
-.presentacion{
-                img{height: 85%;
+/*------PRESENTACION--------*/
+.presentacion{  @include flex (flex,0,0,center);
+                img{
+                    height: 85%;
                     width: 40%;
                     margin-top: 20px;
                     margin-left: 20px; 
@@ -60,7 +59,7 @@
                     font-style: italic;
                     }
                     p{
-                        color:rgb(124, 70, 172);
+                        color:nth($colores,2);
                         font-size: 20px;
                         font-weight:bolder;
                         padding: 25px;
@@ -74,85 +73,55 @@
                 background-image: url(../img/fondotttt.jpg); 
                 background-repeat: repeat;
                 padding-bottom: 25px;
-                display: flex;
-                justify-content:space-around ;
+                @include flex(flex,0,space-around, 0);
                 h2{
                     color:rgb(124, 70, 172);
                     text-align: center;
                     padding: 25px;
                 }
                 div{
-                    width: 234px;
-                    height: 400px;
-                    border:solid rgb(186,120,243);
+                    @extend %caracteristicasdiv;
                     img{
-                        width: 228px;
-                        height: 250px;
+                        @extend %caracteristicasimg;
                     }
                     h3{
-                        color:rgb(124, 70, 172);
-                        text-align: center;
-                        background-color:rgb(186, 245, 225);
-                        font-size: 20px;
+                        @extend %caracteristicash3;
+                    }
+
+                    p{
+                        @extend %caracteristicasp;
+                    }
+                }
+                div{@extend %caracteristicasdiv;
+                   
+                    img{
+                        @extend %caracteristicasimg;
 
                     }
+                    h3{
+                        @extend %caracteristicash3;
+                   
+                    }
                     p{
-                        background-color: rgba(240, 237, 243, 0.5);
-                        color:rgb(124, 70, 172);
-                        text-align: center;
-                        font-weight:bolder;
-                        padding: 4px;
-                        height: 27%;
+                        @extend %caracteristicasp;
+                        
                     }
                 }
                 div{
-                    width: 234px;
-                    height: 400px;
-                    border:solid rgb(186,120,243);
-                    img{ width: 228px;
-                        height: 250px;
+                    @extend %caracteristicasdiv;
+                    img{
+                        @extend %caracteristicasimg;
                     }
                     h3{
-                        color:rgb(124, 70, 172);
-                        text-align: center;
-                        background-color:rgb(186, 245, 225);
-                        font-size: 20px;
-                    }
-                    p{
-                        background-color: rgba(240, 237, 243, 0.5);
-                        color:rgb(124, 70, 172);
-                        text-align: center;
-                        font-weight:bolder;
-                        padding: 4px;
-                        height: 27%;
-                    }
-                }
-                div{
-                    width: 234px;
-                    height: 400px;
-                    border:solid rgb(186,120,243);
-                    img{ width: 228px;
-                        height: 250px;
-                    }
-                    h3{
-                        color:rgb(124, 70, 172);
-                        text-align: center;
-                        background-color:rgb(186, 245, 225);
-                        font-size: 20px;
+                        @extend %caracteristicash3;
                     }
                     p{ 
-                        background-color: rgba(240, 237, 243, 0.5);
-                        color:rgb(124, 70, 172);
-                        text-align: center;
-                        font-weight:bolder;
-                        padding: 4px;
-                        height: 27%;
+                        @extend %caracteristicasp;
                     }
                 }
 }
 .videoinformativo{
-                display: flex;
-                align-items: center;
+                @include flex (flex,0,0,center);
                 padding: 25px;
                 background-color: rgb(186, 245, 225);
                     p{
@@ -179,7 +148,7 @@
             padding-top: 15px;
             margin-bottom: 25px;
             background-color:aliceblue;
-            color:rgb(162, 96, 216);
+            color:rgb(182, 112, 243);
             font-size: 30px;
             font-weight: bolder;
             text-align: center;
@@ -222,7 +191,7 @@
                         
         }
 /*--------------SERVICIOS-----------*/
-.serviciosTortuguitas{
+.serviciosTortuguitas{ 
                     background-image:url(../img/patasdeperros.jpg);
                     background-repeat: repeat;
                     }
@@ -236,72 +205,40 @@
                         text-align: center;
                         }
                     h2 {
-                        color:rgb(162, 96, 216);
-                        text-align: center;
-                        font-size: 25px;
-                        font-weight: bolder;
-                        background-color:aliceblue;
-                        margin:15px;
+                        @extend %serviciosh2;
                         }
-                    .serviciosTortuguitasContenedor{
-                                                    display: flex;
-                                                    align-items: center;
-                                                    flex-direction: column;
-                                                    justify-content: space-between;
+                    
+                    .serviciosTortuguitasContenedor{                                                  
+                                                    @include flex (flex,column,space-between,center);
                                                     animation-name: servicios;
                                                     animation-duration: 3s;
                                                     animation-timing-function: ease-in-out;
                                                     animation-direction: initial;
+                                                    
                                                     .hospedaje{
                                                                 img{height: 250px;
                                                                 }
                                                             }
                                     div{
-                                        h2{color:rgb(162, 96, 216);
-                                            text-align: center;
-                                            font-size: 25px;
-                                            font-weight: bolder;
-                                            background-color:aliceblue;
-                                            margin:15px;
+                                        h2{
+                                            @extend %serviciosh2;
                                         }
                                         h3{
-                                            margin-top: 15px;
-                                            color:rgb(162, 96, 216);
-                                            text-align: left;
-                                            font-size: 20px;
-                                            font-weight: bolder;
-                                            margin: 15px;
-                                            text-align: center;
+                                            @extend %serviciosh3;
+                                                                                    
+
+                                        }
+                                        h3{
+                                            @extend %serviciosh3;
                                             
 
                                         }
                                         h3{
-                                            margin-top: 15px;
-                                            color:rgb(162, 96, 216);
-                                            text-align: left;
-                                            font-size: 20px;
-                                            font-weight: bolder;
-                                            margin: 15px;
-                                            text-align: center;
-                                            
-
-                                        }
-                                        h3{
-                                            margin-top: 15px;
-                                            color:rgb(162, 96, 216);
-                                            text-align: left;
-                                            font-size: 20px;
-                                            font-weight: bolder;
-                                            margin: 15px;
-                                            text-align: center;
+                                            @extend %serviciosh3;
                                         }
                                     }
                                 
-                                    .club{
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
-                                        flex-direction: row-reverse;
+                                    .club{@include flex (display,row-reverse,space-between,center);
                                         margin: 25px 25px 25px 25px; 
                                         padding: 10px 10px 10px 10px;
                                         border: solid rgb(162, 96, 216);
@@ -311,46 +248,24 @@
                                             img{height: 250px;
                                                 }
                                         div{
-                                            h2{color:rgb(162, 96, 216);
-                                                text-align: center;
-                                                font-size: 25px;
-                                                font-weight: bolder;
-                                                background-color:aliceblue;
-                                                margin:15px;
+                                            h2
+                                            {
+                                                @extend %serviciosh2;  
                                             }
+
+                                                                                        }
                                             h3{
-                                                margin-top: 15px;
-                                                color:rgb(162, 96, 216);
-                                                text-align: left;
-                                                font-size: 20px;
-                                                font-weight: bolder;
-                                                margin: 15px;
-                                                text-align: center;
+                                                @extend %serviciosh3;
                                                 }
                                             h3{
-                                                margin-top: 15px;
-                                                color:rgb(162, 96, 216);
-                                                text-align: left;
-                                                font-size: 20px;
-                                                font-weight: bolder;
-                                                margin: 15px;
-                                                text-align: center;
+                                                @extend %serviciosh3;
                                                 }
                                             h3{
-                                                margin-top: 15px;
-                                                color:rgb(162, 96, 216);
-                                                text-align: left;
-                                                font-size: 20px;
-                                                font-weight: bolder;
-                                                margin: 15px;
-                                                text-align: center;
+                                                @extend %serviciosh3;
                                                 }
                                         }                        
                                     }
-                                    .baño {
-                                        display: flex;
-                                        justify-content: space-between;
-                                        align-items: center;
+                                    .baño {@include flex (flex,0,space-between,center);
                                         margin: 25px 25px 25px 25px; 
                                         padding: 10px 10px 10px 10px;
                                         border: solid rgb(162, 96, 216);
@@ -359,13 +274,11 @@
                                         img {height: 250px;
                                         }
                                         div{
-                                            h2{color:rgb(162, 96, 216);
-                                                text-align: center;
-                                                font-size: 25px;
-                                                font-weight: bolder;
-                                                background-color:aliceblue;
-                                                margin:15px;
-                                            }
+                                            h2
+                                            {
+                                            @extend %serviciosh2;
+                                            } 
+                                                
                                             p{
                                                 margin-top: 25px;
                                                 color:rgb(162, 96, 216);
@@ -375,22 +288,12 @@
 
                                             }
                                             h3{
-                                                margin-top: 15px;
-                                                color:rgb(162, 96, 216);
-                                                text-align: left;
-                                                font-size: 20px;
-                                                font-weight: bolder;
-                                                margin: 15px;
-                                                text-align: center;
-                                            }
+                                                @extend %serviciosh3;
 
+                                            }
                                         }
                                     }
-                                    .traslados{
-                                                display: flex;
-                                                justify-content: space-between;
-                                                align-items: center;
-                                                flex-direction: row-reverse;
+                                    .traslados{ @include flex (flex,row-reverse,space-between,center);
                                                 margin: 25px 25px 25px 25px; 
                                                 padding: 10px 10px 10px 10px;
                                                 border: solid rgb(162, 96, 216);
@@ -400,14 +303,8 @@
                                                     }
                                                 div{ 
                                                     h2{
-                                                        color:rgb(162, 96, 216);
-                                                        text-align: center;
-                                                        font-size: 25px;
-                                                        font-weight: bolder;
-                                                        background-color:aliceblue;
-                                                        margin:15px;
-
-                                                    }
+                                                    @extend %serviciosh2;
+                                                    } 
                                                     p{
                                                         margin-top: 25px;
                                                         color:rgb(162, 96, 216);
@@ -416,18 +313,12 @@
                                                         text-align: center;
 
                                                     }
-                                                    h3{margin-top: 15px;
-                                                        color:rgb(162, 96, 216);
-                                                        text-align: left;
-                                                        font-size: 20px;
-                                                        font-weight: bolder;
-                                                        margin: 15px;
-                                                        text-align: center;
-
+                                                    h3{
+                                                        @extend %serviciosh3;
                                                     }
                                                 }
                                     }
-                                }
+
 .serviciosCaba{
                 background-image: url(../img/fondotttt.jpg);
                 background-repeat: repeat;
@@ -443,10 +334,7 @@
 
                 }
                 .sedeCaba{
-                    
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        @include flex (flex,0,space-between,center);
                         margin-left:15px;
                         margin-top: 15px;
                         border: solid rgb(162, 96, 216);
@@ -506,95 +394,55 @@
             }
             .nosotrosContenedor{
                                 padding: 5px;
-                                justify-content:space-evenly;
-                                .nosotrosFlex{
-                                                display: flex;
+                                .nosotrosFlex{ @include flex(flex,0,space-evenly,0);
                                             div{
                                                 img{
-                                                    width: 100%;
-                                                    height: 250px;
-                                                    padding: 15px;
+                                                    @extend %nosotrosimg;
                                                     }
 
                                                 }
                                                 h2{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight: bolder;
-                                                    font-size: 20px;
-                                                    
-                                                }
+                                                    @extend %nosotrosh2;
+                                                }                                            }
                                                 p{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight:bolder;
-                                                    padding: 4px;
-                                                    height: 27%;
+                                                    @extend %nosotrosp;
 
                                                 }
                                             }
                                             div{
-                                                img{width: 100%;
-                                                    height: 250px;
-                                                    padding: 15px;
+                                                img{@extend %nosotrosimg;
                                                     }
                                                 h2{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight: bolder;
-                                                    font-size: 20px;
-                                                }
+                                                    @extend %nosotrosh2;                                                }
                                                 p{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight:bolder;
-                                                    padding: 4px;
-                                                    height: 27%;
+                                                    @extend %nosotrosp;
                                                 }
                                             }
                                             div {
-                                                img{width: 100%;
-                                                    height: 250px;
-                                                    padding: 15px;
+                                                img{
+                                                    @extend %nosotrosimg;
                                                     }
                                                 h2{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight: bolder;
-                                                    font-size: 20px;
+                                                    @extend %nosotrosh2;
                                                 }
                                                 p{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight:bolder;
-                                                    padding: 4px;
-                                                    height: 27%;
+                                                    @extend %nosotrosp;
                                                 }
                                             }
                                             div{
-                                                img{width: 100%;
-                                                    height: 250px;
-                                                    padding: 15px;
+                                                img{@extend %nosotrosimg;
                                                     }
                                                 h2{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight: bolder;
-                                                    font-size: 20px;
+                                                    @extend %nosotrosh2;
                                                 }
                                                 p{
-                                                    color:rgb(124, 70, 172);
-                                                    text-align: center;
-                                                    font-weight:bolder;
-                                                    padding: 4px;
-                                                    height: 27%;
+                                                    @extend %nosotrosp;
                                                 }
                                             }
                                 }
-    }  
+      
 .formulario{
-    display: flex;
-    justify-content: center;
+    @include flex (flex,0,center,0);
     color: rgb(173, 243, 243);
     background-color: rgb(185, 118, 248);
     padding-top: 25px;
@@ -620,8 +468,7 @@
             }
             .carousel-item{
                 div{
-                    img{width: 80%;
-                        height: 50vh;
+                    img{ @extend %carouselimg;
                     }
                 }  
                     div{
@@ -632,65 +479,56 @@
                             text-align:left;
                         }
                         .segundop{
-                            font-size: 20px;
-                            font-weight: bolder;
-                            color:rgb(162, 96, 216) ;
-                            text-align: right;
+                            @extend %carouselp;
                         }
                     }
             
                 }
                 .carousel-item{
                     div{
-                        img{width: 80%;
-                            height: 50vh;
+                        img{@extend %carouselimg;
                         }
                     }  
                         div{
                             .tercera{
-                                font-size: 30px;
-                                font-weight: bolder;
-                                color:rgb(162, 96, 216);
-                                text-align:left;
+                             @extend %carouselt;
                             }
                             .tercerap{
-                                font-size: 20px;
-                                font-weight: bolder;
-                                color:rgb(162, 96, 216) ;
-                                text-align: right;
+                                @extend %carouselp;
                             }
                         }
                 
                     }
                     .carousel-item{
                         div{
-                            img{width: 80%;
-                                height: 50vh;
+                            @extend %carouselimg;
                             }
                         }  
                             div{
                                 .cuarta{
-                                    font-size: 30px;
+                                    font-size:nth($font-size,3 );
                                     font-weight: bolder;
-                                    color:rgb(162, 96, 216);
+                                    color:nth($colores,4 );
                                     text-align:left;
                                 }
                                 
                             }
                     
                         }
-            }
-.parraforequisitos{
-                    h1{ font-size: 25px;
-                        border: solid;
+            
+.parraforequisitos{ background-color: nth($colores,1);
+                    
+                    h1{ 
+                        font-size: nth ($font-size,2);
+                        font-weight:bolder;
                         color:rgb(162, 96, 216);
                         margin:25px;
                         padding:25px;}
                     p{
-                        font-size: 20px;
+                        font-size: nth($font-size,1);
                         color:rgb(162, 96, 216);
                         margin:25px;
                         padding:25px;
 
                     }
-}
+}       

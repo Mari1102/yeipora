@@ -91,7 +91,8 @@ transition: 1s;
 .hero a:hover
 {
 color: rgb(182, 112, 243);
-background-color:rgb(186, 245, 225) ;
+background-color:rgb(186, 245, 225);
+
 }
 
 /*presentacion*/
@@ -111,7 +112,7 @@ width: 40%;
 margin-top: 20px;
 margin-left: 20px; 
 margin-bottom: 20px;
-border: solid rgb(186,120,243);
+border: solid rgb(182,112,243);
 }
 
 .presentacion div
@@ -170,7 +171,7 @@ justify-content:space-around ;
 {
 width: 234px;
 height: 400px;
-border:solid rgb(186,120,243);
+border:solid rgb(182,112,243);
 }
 
 .caracteristicas div img
@@ -986,8 +987,17 @@ color:rgb(162, 96, 216);
 text-align:right;
 }
 
+h1 {
+    font-size: 25px;
+    font-weight:bolder;
+    color:rgb(162, 96, 216);
+    padding:25px;
+
+}
+
 .parraforequisitos
 {
+background-color: rgb(186,245,225);
 font-size: 20px;
 color:rgb(162, 96, 216);
 margin:25px;

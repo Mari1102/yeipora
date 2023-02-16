@@ -24,17 +24,14 @@ footer{
                 h2{color:rgb(186, 245, 225);
                     margin-right: 25px;
                 }
-                a{ width: 50px;
-                    height: 50px;
-                    margin: 10px;
+                a{
+                    @extend %footera;
                 }
-                a{ width: 50px;
-                    height: 50px;
-                    margin: 10px;
+                a{
+                    @extend %footera;
                 }
-                a{ width: 50px;
-                    height: 50px;
-                    margin: 10px;
+                a{ 
+                    @extend %footera;
                 }
             }          
             div{

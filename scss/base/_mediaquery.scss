@@ -1,0 +1,165 @@
+@media screen and (max-width:830px) 
+{
+.serviciosTortuguitasContenedor .hospedaje
+{
+flex-direction: column;
+}
+.serviciosTortuguitasContenedor .club
+{
+flex-direction: column;  
+}
+
+.serviciosTortuguitasContenedor .baño
+{
+flex-direction: column;  
+}
+.serviciosTortuguitasContenedor .traslados
+{
+flex-direction: column;  
+}
+
+.sedeCaba
+{
+flex-direction: column;  
+}
+
+.sedeCaba h2
+{
+margin-top: 5px;
+}
+
+}
+
+@media screen and (max-width:830px) 
+{
+.hero h1
+{
+font-size: 45px;
+}
+
+.hero h2
+{ 
+font-size: 15px;
+}
+
+footer
+.imagenes
+{
+flex-direction: column;
+align-items: center;
+}
+.contacto
+{
+flex-direction: column;
+align-items: center;
+}
+}
+
+@media screen and (max-width:750px)
+{
+.hero
+{
+background-position:top;  
+}
+.presentacion
+{
+flex-direction: column;
+}
+.caracteristicasFlex
+{
+flex-direction: column;
+align-items: center;
+padding: 5px;
+}
+.caracteristicas .caracteristicasFlex div
+{
+margin: 15px;
+}
+.nosotrosFlex
+{
+flex-direction: column;
+padding-left: 25px;
+padding-right: 25px;
+
+
+}
+}
+
+@media screen and (max-width:630px)
+{
+header
+{
+flex-direction: column;
+align-items: center;
+}
+
+footer 
+.contacto iframe
+{
+width: 50%;
+}
+
+
+}
+
+
+@media screen and (max-width:600px) 
+{
+.gridGaleria
+{
+grid-template-columns: 1fr;
+}
+
+.gridGaleria img
+{
+grid-row: span 1;
+grid-column: span 1;
+}
+}
+
+@media screen and (max-width:550px)
+{
+.videoInformativo
+{
+flex-direction: column;
+}
+}
+
+@media screen and (max-width:530px) 
+{
+header nav ul
+{
+flex-direction:column;
+text-align: center;
+}
+
+.galeria h1
+{
+font-size: 20px;
+} 
+
+.contacto .direcciones h3
+{
+font-size: 10px;
+font-weight: bolder;
+margin-left: 25px;
+margin-right: 25px ;
+}
+.serviciosTortuguitas h1
+{
+font-size: 20px;
+}
+.formulario
+{
+padding-left:25px;
+}
+}
+
+@media screen and (max-width:420px) 
+{
+.hero a
+{ 
+padding-bottom: 5px;
+} 
+}
+
