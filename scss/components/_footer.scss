@@ -1,60 +1,62 @@
-/*------footer-----*/
+footer{background-image:url(../img/patadeperro.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    height: 100%;
+    .imagenes{@include flex (flex,0,space-between,0);
+        padding: 20px;
+        img{@extend %footera;
 
-footer{
-        background-image:url(../img/patadeperro.png) ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position:center;
-        height: 100%;
-        div{
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            img{
-                width: 150px;
-                height: 150px;
-                margin: 5px;
+        }
+        .redesSociales{
+            h2{color:rgb(186, 245, 225);
+                margin-right: 25px;
+
+            }
+            a{img{@extend %footera;}
+
+            }
+            a{img{@extend %footera;}
+
+            }
+            a{img{@extend %footera;}
+
             }
         }
-            div{
-                display: flex;
-                justify-content:space-between;
-               
-            
-                h2{color:rgb(186, 245, 225);
-                    margin-right: 25px;
-                }
-                a{
-                    @extend %footera;
-                }
-                a{
-                    @extend %footera;
-                }
-                a{ 
-                    @extend %footera;
-                }
-            }          
-            div{
-    
-                div{
-                    h3{
-                        background-color: rgba(196, 245, 238, 0.6);
-                        color:rgb(124, 70, 172);
-                        font-size: 13px;
-                        font-weight: bolder;
-                        margin-left: 25px;
 
-                    }
-                
-                }
-                iframe {
-                        width: 20%;
-                        height: 100%;
-                        margin-right: 25px;
-                        margin-top: 10px;
-                        padding-bottom: 10px;
-                    }
-                }    
-        
     }
+    .contacto{@include flex (flex,0,space-between,0);
+        .direcciones{
+            h3{background-color: rgba(196, 245, 238, 0.6);
+                color:rgb(124, 70, 172);
+                font-size: 13px;
+                font-weight: bolder;
+                margin-left: 25px;
+
+            }
+            h3{background-color: rgba(196, 245, 238, 0.6);
+                color:rgb(124, 70, 172);
+                font-size: 13px;
+                font-weight: bolder;
+                margin-left: 25px;
+
+            }
+            h3{background-color: rgba(196, 245, 238, 0.6);
+                color:rgb(124, 70, 172);
+                font-size: 13px;
+                font-weight: bolder;
+                margin-left: 25px;
+
+            }
+        }
+    }
+        iframe{width: 20%;
+            height: 100%;
+            margin-right: 25px;
+            margin-top: 10px;
+            padding-bottom: 10px;
+
+    }
+    
+}
     

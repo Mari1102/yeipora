@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Laila&display=swap");
-h2, .serviciosTortuguitasContenedor div h2, .serviciosTortuguitasContenedor .club div h2, .baño div h2, .traslados div h2 {
+.serviciosTortuguitas h2, .serviciosTortuguitas .serviciosTortuguitasContenedor div h2, div h2, .baño div h2 {
   color: #a260d8;
   text-align: center;
   font-size: 25px;
@@ -8,23 +8,7 @@ h2, .serviciosTortuguitasContenedor div h2, .serviciosTortuguitasContenedor .clu
   background-color: aliceblue;
   margin: 15px; }
 
-.requisitos .carousel-item div img, .requisitos .carousel-item div {
-  width: 80%;
-  height: 50vh; }
-
-.requisitos .carousel-item div .tercera {
-  font-size: 20px;
-  font-weight: bolder;
-  color: #baf5e1;
-  text-align: right; }
-
-.requisitos .carousel-item div .segundop, .requisitos .carousel-item div .tercerap {
-  font-size: 20px;
-  font-weight: bolder;
-  color: #baf5e1;
-  text-align: right; }
-
-.serviciosTortuguitasContenedor div h3, .serviciosTortuguitasContenedor .club h3, .baño div h3, .traslados div h3 {
+.serviciosTortuguitas .serviciosTortuguitasContenedor h3, div h3, .baño div h3 {
   margin-top: 15px;
   color: #a260d8;
   text-align: left;
@@ -33,22 +17,17 @@ h2, .serviciosTortuguitasContenedor div h2, .serviciosTortuguitasContenedor .clu
   margin: 15px;
   text-align: center; }
 
-.caracteristicas div {
-  width: 234px;
-  height: 400px;
-  border: solid #b670f3; }
-
-.caracteristicas div img {
+.caracteristicas .caracteristicasFlex div img, .caracteristicas div img {
   width: 228px;
   height: 250px; }
 
-.caracteristicas div h3 {
+.caracteristicas .caracteristicasFlex div h3, .caracteristicas div h3 {
   color: #7c46ac;
   text-align: center;
   background-color: #baf5e1;
   font-size: 20px; }
 
-.caracteristicas div p {
+.caracteristicas .caracteristicasFlex p, .caracteristicas div p {
   background-color: rgba(240, 237, 243, 0.5);
   color: #7c46ac;
   text-align: center;
@@ -56,25 +35,25 @@ h2, .serviciosTortuguitasContenedor div h2, .serviciosTortuguitasContenedor .clu
   padding: 4px;
   height: 27%; }
 
-.nosotros .nosotrosContenedor .nosotrosFlex div img, .nosotros div img {
+.nosotros .nosotrosContenedor .nosotrosFlex div img {
   width: 100%;
   height: 250px;
   padding: 15px; }
 
-.nosotros .nosotrosContenedor .nosotrosFlex h2, .nosotros div h2 {
+.nosotros .nosotrosContenedor .nosotrosFlex div h2 {
   color: #7c46ac;
   text-align: center;
   font-weight: bolder;
   font-size: 20px; }
 
-.nosotros .nosotrosContenedor p, .nosotros div p {
+.nosotros .nosotrosContenedor .nosotrosFlex div p {
   color: #7c46ac;
   text-align: center;
   font-weight: bolder;
   padding: 4px;
   height: 27%; }
 
-footer div a {
+footer .imagenes img, footer .imagenes .redesSociales a img {
   width: 50px;
   height: 50px;
   margin: 10px; }
@@ -87,26 +66,28 @@ footer div a {
 body {
   font-family: 'Laila', sans-serif; }
 
-/*-----header-----*/
 header {
   background-color: #bf82f5;
   position: sticky;
   top: 0; }
+  header nav .container-fluid a img {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75); }
+  header nav div li a {
+    margin: 15px; }
+  header nav div li li a {
+    margin: 15px; }
+  header nav div li li li a {
+    margin: 15px; }
+  header nav div li li li a {
+    margin: 15px; }
+  header nav div li li li a {
+    margin: 15px; }
 
-nav div a img {
-  width: 80px;
-  height: 80px;
-  margin: 5px;
-  box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75); }
-
-nav div ul li a {
-  margin: 15px; }
-  nav div ul li a:hover {
-    color: #8568b8; }
-
-/*-----HERO-----*/
 .hero {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.432), rgba(220, 201, 236, 0.425)), url(../img/yeiporaperros.png);
@@ -119,19 +100,19 @@ nav div ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  .hero .hero h1 {
+  .hero h1 {
     color: #baf5e1;
-    font-size: 30px;
+    font-size: 60px;
     padding: 25px 25px;
     margin: bottom 15px; }
-  .hero .hero h2 {
+  .hero h2 {
     background-color: rgba(161, 83, 238, 0.5);
     margin: 15px 15px 15px 15px;
     text-align: center;
     color: #baf5e1;
     font-size: 30px;
     font-weight: bolder; }
-  .hero .hero a {
+  .hero a {
     color: #baf5e1;
     text-decoration: none;
     background-color: #b670f3;
@@ -140,155 +121,145 @@ nav div ul li a {
     margin-bottom: 25px;
     border: solid #baf5e1;
     transition: 1s; }
-    .hero .hero a:hover {
+    .hero a:hover {
       color: #b670f3;
       background-color: #baf5e1; }
 
-/*------PRESENTACION--------*/
 .presentacion {
   display: flex;
   flex-direction: 0;
   justify-content: 0;
-  align-items: center; }
+  align-items: center;
+  background-color: #baf5e1; }
   .presentacion img {
     height: 85%;
     width: 40%;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    border: solid #ba78f3; }
-  .presentacion div {
+    border: solid #b670f3; }
+  .presentacion div p::first-letter {
     padding: 30px; }
-    .presentacion div h2 {
+    .presentacion div p::first-letter h2 {
       color: #7c46ac;
       text-align: center;
       font-size: 30px;
       font-weight: bolder;
       margin-top: 20px;
       font-style: italic; }
-    .presentacion div p {
-      color: #7c46ac;
-      font-size: 20px;
-      font-weight: bolder;
-      padding: 25px; }
+    .presentacion div p::first-letter p {
+      color: #983bee;
+      font-size: 30px;
+      font-style: italic; }
 
-/*------CARACTERISTICAS-----*/
 .caracteristicas {
   background-image: url(../img/fondotttt.jpg);
   background-repeat: repeat;
-  padding-bottom: 25px;
-  display: flex;
-  flex-direction: 0;
-  justify-content: space-around;
-  align-items: 0; }
+  padding-bottom: 25px; }
   .caracteristicas h2 {
     color: #7c46ac;
     text-align: center;
     padding: 25px; }
+  .caracteristicas .caracteristicasFlex {
+    display: flex;
+    flex-direction: 0;
+    justify-content: space-around;
+    align-items: 0; }
+    .caracteristicas .caracteristicasFlex div {
+      width: 234px;
+      height: 400px;
+      border: solid #b670f3; }
+  .caracteristicas div {
+    width: 234px;
+    height: 400px;
+    border: solid #b670f3; }
+  .caracteristicas div {
+    width: 234px;
+    height: 400px;
+    border: solid #b670f3; }
 
-.videoinformativo {
+.videoInformativo {
   display: flex;
   flex-direction: 0;
   justify-content: 0;
   align-items: center;
   padding: 25px;
   background-color: #baf5e1; }
-  .videoinformativo p {
+  .videoInformativo p {
     color: #7c46ac;
     text-align: left;
     font-weight: bolder;
     font-size: 25px;
     padding: 10px; }
-  .videoinformativo iframe {
+  .videoInformativo iframe {
     margin-top: 25px;
     padding: 25px;
     display: block;
     width: 100%;
     height: 100%; }
 
-.galeria {
-  height: 100%;
-  background-color: #cca7ed;
-  padding-bottom: 10px; }
-  .galeria h1 {
-    padding-top: 15px;
-    margin-bottom: 25px;
-    background-color: aliceblue;
-    color: #b670f3;
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center; }
-  .galeria div .gridGaleria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 400px 400px 400px 400px 400px;
-    grid-auto-rows: 300px;
-    gap: 20px;
-    padding-right: 5px;
-    padding-left: 5px;
-    height: 100%;
-    width: 100%;
-    border: 2px solid #a260d8;
-    box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    object-fit: cover;
-    transition: 2s; }
-    .galeria div .gridGaleria:hover {
-      transform: scale(1.1); }
-    .galeria div .gridGaleria img .imagenPrimera {
-      grid-row: span 2;
-      grid-column: span 2; }
-    .galeria div .gridGaleria img .imagenSegunda {
-      grid-column: span 2; }
-    .galeria div .gridGaleria img .imagenSexta {
-      grid-row: span 2;
-      grid-column: span 2; }
-    .galeria div .gridGaleria img .imagenDieciocho {
-      grid-row: span 2; }
-
-/*--------------SERVICIOS-----------*/
 .serviciosTortuguitas {
   background-image: url(../img/patasdeperros.jpg);
   background-repeat: repeat; }
-
-h1 {
-  padding-top: 15px;
-  margin-bottom: 25px;
-  background-color: aliceblue;
-  color: #a260d8;
-  font-size: 30px;
-  font-weight: bolder;
-  text-align: center; }
-
-.serviciosTortuguitasContenedor {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  animation-name: servicios;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-direction: initial; }
-  .serviciosTortuguitasContenedor .hospedaje img {
-    height: 250px; }
-  .serviciosTortuguitasContenedor .club {
-    display: display;
-    flex-direction: row-reverse;
+  .serviciosTortuguitas h1 {
+    padding-top: 15px;
+    margin-bottom: 25px;
+    background-color: aliceblue;
+    color: #a260d8;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center; }
+  .serviciosTortuguitas .serviciosTortuguitasContenedor {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 25px 25px 25px;
-    padding: 10px 10px 10px 10px;
-    border: solid #a260d8;
-    background: #22c1c3;
-    background: linear-gradient(0deg, #22c1c3 21%, #21f2b4 61%);
-    width: 95%; }
-    .serviciosTortuguitasContenedor .club img {
+    animation-name: servicios;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: initial; }
+
+@keyframes servicios {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+    .serviciosTortuguitas .serviciosTortuguitasContenedor .hospedaje {
+      display: flex;
+      flex-direction: 0;
+      justify-content: space-between;
+      align-items: center;
+      margin: 25px 25px 25px 25px;
+      padding: 10px 10px 10px 10px;
+      border: solid #a260d8;
+      background: #22c1c3;
+      background: linear-gradient(0deg, #22c1c3 21%, #21f2b4 61%);
+      width: 95%; }
+    .serviciosTortuguitas .serviciosTortuguitasContenedor img {
       height: 250px; }
+
+.club {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 25px 25px 25px;
+  padding: 10px 10px 10px 10px;
+  border: solid #a260d8;
+  background: #22c1c3;
+  background: linear-gradient(0deg, #22c1c3 21%, #21f2b4 61%);
+  width: 95%; }
+
+img {
+  height: 250px; }
 
 .baño {
   display: flex;
   flex-direction: 0;
+  justify-content: space-between;
+  align-items: center;
   justify-content: space-between;
   align-items: center;
   margin: 25px 25px 25px 25px;
@@ -315,14 +286,16 @@ h1 {
   border: solid #a260d8;
   background: linear-gradient(0deg, #22c1c3 21%, #21f2b4 61%);
   width: 95%; }
-  .traslados img {
-    height: 250px; }
-  .traslados div p {
-    margin-top: 25px;
-    color: #a260d8;
-    font-size: 20px;
-    font-weight: bolder;
-    text-align: center; }
+
+img {
+  height: 250px; }
+
+div p {
+  margin-top: 25px;
+  color: #a260d8;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center; }
 
 .serviciosCaba {
   background-image: url(../img/fondotttt.jpg);
@@ -349,36 +322,45 @@ h1 {
     animation-duration: 3s;
     animation-timing-function: ease-in-out;
     animation-direction: initial; }
-    .serviciosCaba .sedeCaba img {
-      height: 250px;
-      width: 250px;
-      padding: 10px 10px 10px 10px; }
-    .serviciosCaba .sedeCaba div h2 {
-      color: #a260d8;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bolder;
-      background-color: aliceblue;
-      margin-left: 15px;
-      margin-right: 15px; }
-    .serviciosCaba .sedeCaba div p {
-      margin-top: 25px;
-      color: aliceblue;
-      font-size: 20px;
-      font-weight: bolder;
-      text-align: center;
-      padding-right: 15px; }
-    .serviciosCaba .sedeCaba div h3 {
-      color: aliceblue;
-      font-size: 20px;
-      font-weight: bolder;
-      text-align: center;
-      margin-top: 15px; }
 
-/*------NOSOTROS--------*/
-.nosotros {
-  background-color: #adf3f3; }
-  .nosotros h1 {
+@keyframes servicios {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+  .serviciosCaba img {
+    height: 250px;
+    width: 250px;
+    padding: 10px 10px 10px 10px; }
+  .serviciosCaba div h2 {
+    color: #a260d8;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: aliceblue;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .serviciosCaba div p {
+    margin-top: 25px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    padding-right: 15px; }
+  .serviciosCaba div h3 {
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 15px; }
+
+.galeria {
+  height: 100%;
+  background-color: #cca7ed;
+  padding-bottom: 10px; }
+  .galeria h1 {
     padding-top: 15px;
     margin-bottom: 25px;
     background-color: aliceblue;
@@ -386,89 +368,166 @@ h1 {
     font-size: 30px;
     font-weight: bolder;
     text-align: center; }
-  .nosotros .nosotrosContenedor {
-    padding: 5px; }
-    .nosotros .nosotrosContenedor .nosotrosFlex {
-      display: flex;
-      flex-direction: 0;
-      justify-content: space-evenly;
-      align-items: 0; }
+  .galeria .gridGaleria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-auto-rows: 300px;
+    gap: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #a260d8;
+    box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
+    object-fit: cover;
+    transition: 2s; }
+    .galeria .gridGaleria:hover {
+      transform: scale(1.1); }
+    .galeria .gridGaleria .imagenPrimera {
+      grid-row: span 2;
+      grid-column: span 2; }
+    .galeria .gridGaleria .imagenSegunda {
+      grid-column: span 2; }
+    .galeria .gridGaleria .imagenSenta {
+      grid-row: span 2;
+      grid-column: span 2; }
+    .galeria .gridGaleria .imagenDieciocho {
+      grid-row: span 2; }
+
+.nosotros h1 {
+  padding-top: 15px;
+  margin-bottom: 25px;
+  background-color: aliceblue;
+  color: #a260d8;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center; }
+
+.nosotros .nosotrosContenedor {
+  background-color: #adf3f3;
+  padding: 5px;
+  justify-content: space-evenly; }
+  .nosotros .nosotrosContenedor .nosotrosFlex {
+    display: flex; }
 
 .formulario {
   display: flex;
   flex-direction: 0;
   justify-content: center;
   align-items: 0;
+  justify-content: center;
   color: #adf3f3;
   background-color: #b976f8;
   padding-top: 25px;
   padding-bottom: 25px; }
 
-/*------------REQUISITOS-------*/
-.requisitos .carousel-item div img {
+.requisitos div div img {
   width: 80%;
   height: 50vh; }
 
-.requisitos .carousel-item div .primero {
+.requisitos div div div .primero {
   font-size: 30px;
   font-weight: bolder;
   color: #a260d8;
   text-align: left; }
 
-.requisitos .carousel-item div .segundo {
+.requisitos div img {
+  width: 80%;
+  height: 50vh; }
+
+.requisitos div div .segundo {
   font-size: 30px;
   font-weight: bolder;
   color: #a260d8;
+  text-align: right; }
+
+.requisitos div div .segundop {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #a260d8;
+  text-align: right; }
+
+.requisitos div img {
+  width: 80%;
+  height: 50vh; }
+
+.requisitos div div .tercera {
+  font-size: 30px;
+  font-weight: bolder;
+  color: aqua;
   text-align: left; }
 
-.requisitos div .cuarta {
+.requisitos div div .tercerap {
+  font-size: 20px;
+  font-weight: bolder;
+  color: aqua;
+  text-align: left; }
+
+.requisitos div img {
+  width: 80%;
+  height: 50vh; }
+
+.requisitos div div .cuarta {
   font-size: 30px;
   font-weight: bolder;
   color: #a260d8;
-  text-align: left; }
+  text-align: right; }
 
-.parraforequisitos {
-  background-color: #baf5e1; }
-  .parraforequisitos h1 {
-    font-size: nth 20px, 25px, 30px, 60px, 2;
-    font-weight: bolder;
-    color: #a260d8;
-    margin: 25px;
-    padding: 25px; }
-  .parraforequisitos p {
-    font-size: 20px;
-    color: #a260d8;
-    margin: 25px;
-    padding: 25px; }
+.parraforequisitos h1 {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #a260d8;
+  padding: 25px; }
 
-/*------footer-----*/
+.parraforequisitos p {
+  background-color: #baf5e1;
+  font-size: 20px;
+  color: #a260d8;
+  margin: 25px;
+  padding: 25px; }
+
 footer {
   background-image: url(../img/patadeperro.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 100%; }
-  footer div {
+  footer .imagenes {
     display: flex;
+    flex-direction: 0;
     justify-content: space-between;
+    align-items: 0;
     padding: 20px; }
-    footer div img {
-      width: 150px;
-      height: 150px;
-      margin: 5px; }
-  footer div {
-    display: flex;
-    justify-content: space-between; }
-    footer div h2 {
+    footer .imagenes .redesSociales h2 {
       color: #baf5e1;
       margin-right: 25px; }
-  footer div div h3 {
-    background-color: rgba(196, 245, 238, 0.6);
-    color: #7c46ac;
-    font-size: 13px;
-    font-weight: bolder;
-    margin-left: 25px; }
-  footer div iframe {
+  footer .contacto {
+    display: flex;
+    flex-direction: 0;
+    justify-content: space-between;
+    align-items: 0; }
+    footer .contacto .direcciones h3 {
+      background-color: rgba(196, 245, 238, 0.6);
+      color: #7c46ac;
+      font-size: 13px;
+      font-weight: bolder;
+      margin-left: 25px; }
+    footer .contacto .direcciones h3 {
+      background-color: rgba(196, 245, 238, 0.6);
+      color: #7c46ac;
+      font-size: 13px;
+      font-weight: bolder;
+      margin-left: 25px; }
+    footer .contacto .direcciones h3 {
+      background-color: rgba(196, 245, 238, 0.6);
+      color: #7c46ac;
+      font-size: 13px;
+      font-weight: bolder;
+      margin-left: 25px; }
+  footer iframe {
     width: 20%;
     height: 100%;
     margin-right: 25px;
