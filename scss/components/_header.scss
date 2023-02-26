@@ -5,12 +5,10 @@ header{background-color: rgb(191, 130, 245);
         .container-fluid{
 
         
-        a{ img{width: 80px;
-            height:80px;
-            margin: 5px;
-            box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
-            -webkit-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);
-            -moz-box-shadow: 14px 24px 52px -8px rgba(0,0,0,0.75);}}
+        a{ img{width: 100px;
+            height:100px;
+            
+            }
         
         }
     div{
@@ -43,5 +41,6 @@ header{background-color: rgb(191, 130, 245);
         }
     }
     }
-    }
+}
+}
 }

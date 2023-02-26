@@ -45,22 +45,22 @@
   height: 250px;
   padding: 15px; }
 
-.nosotros .nosotrosContenedor .nosotrosFlex div h2 {
+.nosotros .nosotrosContenedor .nosotrosFlex div div h2 {
   color: #7c46ac;
   text-align: center;
   font-weight: bolder;
   font-size: 20px; }
 
-.nosotros .nosotrosContenedor .nosotrosFlex div p {
+.nosotros .nosotrosContenedor .nosotrosFlex div div p {
   color: #7c46ac;
   text-align: center;
   font-weight: bolder;
   padding: 4px;
   height: 27%; }
 
-footer .imagenes img, footer .imagenes .redesSociales a img {
-  width: 50px;
-  height: 50px;
+footer .imagenes .redesSociales a img {
+  width: 100px;
+  height: 100px;
   margin: 10px; }
 
 * {
@@ -73,21 +73,17 @@ header {
   position: sticky;
   top: 0; }
   header nav .container-fluid a img {
-    width: 80px;
-    height: 80px;
-    margin: 5px;
-    box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 14px 24px 52px -8px rgba(0, 0, 0, 0.75); }
-  header nav div li a {
+    width: 100px;
+    height: 100px; }
+  header nav .container-fluid div li a {
     margin: 15px; }
-  header nav div li li a {
+  header nav .container-fluid div li li a {
     margin: 15px; }
-  header nav div li li li a {
+  header nav .container-fluid div li li li a {
     margin: 15px; }
-  header nav div li li li a {
+  header nav .container-fluid div li li li a {
     margin: 15px; }
-  header nav div li li li a {
+  header nav .container-fluid div li li li a {
     margin: 15px; }
 
 .hero {
@@ -619,22 +615,28 @@ div p {
   font-size: 30px;
   font-weight: bolder;
   text-align: center;
-  padding: 15px; }
+  padding: 15px;
+  margin: 0; }
 
 .nosotros .nosotrosContenedor {
   background-color: #adf3f3;
-  display: flex;
-  justify-content: space-evenly; }
+  height: 500px; }
   .nosotros .nosotrosContenedor .nosotrosFlex {
     display: flex; }
 
 .formulario {
   display: flex;
   justify-content: center;
+  align-items: center;
   color: #adf3f3;
   background-color: #b976f8;
   padding-top: 25px;
   padding-bottom: 25px; }
+
+.formulario .boton {
+  border-color: #ccaee9;
+  background-color: aquamarine;
+  color: blueviolet; }
 
 .requisitos div div img {
   width: 80%;
@@ -689,18 +691,20 @@ div p {
   text-align: right; }
 
 .parraforequisitos h1 {
-  font-size: 25px;
+  font-size: 35px;
   background-color: #adf1db;
   font-weight: bolder;
   color: #a260d8;
-  padding: 10px;
+  padding: 30px;
   text-align: center;
-  padding-top: 25px; }
+  margin: 0; }
 
 .parraforequisitos p {
   background-color: #adf1db;
   font-size: 20px;
-  color: #a260d8; }
+  color: #9a3ce7;
+  margin: 0;
+  padding: 25px; }
 
 footer {
   background-image: url(../img/patadeperro.png);
@@ -714,6 +718,10 @@ footer {
     justify-content: space-between;
     align-items: 0;
     padding: 20px; }
+    footer .imagenes img {
+      width: 150px;
+      height: 150px;
+      padding: 20px; }
     footer .imagenes .redesSociales h2 {
       color: #c179e2;
       margin-right: 25px; }
@@ -786,7 +794,9 @@ footer {
   .galeria .gridGaleria .imagenVeinte {
     grid-row: span 1; }
   .galeria .gridGaleria .imagenVeintiuno {
-    grid-column: span 2; } }
+    grid-column: span 2; }
+  .nosotros .nosotrosContenedor {
+    height: 650px; } }
 
 @media screen and (max-width: 830px) {
   .serviciosTortuguitasContenedor .hospedaje {
@@ -823,10 +833,14 @@ footer {
     padding: 5px; }
   .caracteristicas .caracteristicasFlex div {
     margin: 15px; }
-  .nosotrosFlex {
-    flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px; } }
+  .nosotros .nosotrosContenedor {
+    height: 1650px; }
+  .nosotros .nosotrosContenedor .nosotrosFlex {
+    flex-direction: column; } }
+
+@media screen and (max-width: 675px) {
+  .nosotros .nosotrosContenedor {
+    height: 1750px; } }
 
 @media screen and (max-width: 630px) {
   header {
@@ -862,7 +876,9 @@ footer {
 
 @media screen and (max-width: 550px) {
   .videoInformativo {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .parrafoRequisitos {
+    padding: 25px; } }
 
 @media screen and (max-width: 530px) {
   header nav ul {
@@ -879,3 +895,18 @@ footer {
     font-size: 20px; }
   .formulario {
     padding-left: 25px; } }
+
+@media screen and (max-width: 460px) {
+  .nosotros .nosotrosContenedor {
+    height: 1780px;
+    padding: 25px; } }
+
+@media screen and (max-width: 410px) {
+  .nosotros .nosotrosContenedor {
+    height: 1850px;
+    padding: 25px; } }
+
+@media screen and (max-width: 390px) {
+  .nosotros .nosotrosContenedor {
+    height: 1900px;
+    padding: 25px; } }

@@ -5,8 +5,10 @@ footer{background-image:url(../img/patadeperro.png) ;
     height: 100%;
     .imagenes{@include flex (flex,0,space-between,0);
         padding: 20px;
-        img{@extend %footera;
-
+        img {
+            width: 150px;
+            height: 150px;
+            padding: 20px;
         }
         .redesSociales{
             h2{color:rgb(193, 121, 226);

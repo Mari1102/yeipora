@@ -595,60 +595,76 @@ height: 100%;
         font-weight: bolder;
         text-align: center;
         padding: 15px;
+        margin: 0;
          }
     
         .nosotrosContenedor{
             
-            background-color:rgb(173, 243, 243);
-            display: flex;
-            justify-content:space-evenly;
-         
-                        .nosotrosFlex{display: flex;
+           background-color:rgb(173, 243, 243);
+           height: 500px;       
+                        .nosotrosFlex{  display: flex;
+                                        
                                                 div{
-                                                    img{@extend %nosotrosimg;
-                                                    }
-                                                    h2{@extend %nosotrosh2;
-                                                    }
-                                                    p{@extend %nosotrosp;
+                                                    img{ @extend %nosotrosimg;}
+                                                   
+                                                    div {                                                    
+                                                          h2{@extend %nosotrosh2;
+                                                            }
+                                                         p{@extend %nosotrosp;
+                                                        }
                                                     }
                                                 }
                                                 div{
                                                     img{@extend %nosotrosimg;
-                                                    }
-                                                    h2{@extend %nosotrosh2;
-                                                      }
-                                                    p{@extend %nosotrosp;
-                                                     }
-                                                    }
-                                                div{
-                                                    img{@extend %nosotrosimg;
-                                                    }
-                                                    h2{@extend %nosotrosh2;
-                                                    }
-                                                    p{@extend %nosotrosp;
+                                                    } 
+                                                    div {
+                                                        h2{@extend %nosotrosh2;
+                                                        }
+                                                        p{@extend %nosotrosp;
+                                                        }
                                                     }
                                                 }
                                                 div{
-                                                    img{@extend %nosotrosimg;
-                                                    }
-                                                    h2{@extend %nosotrosh2;
-                                                    }
+                                                    img{@extend %nosotrosimg};
+                                                    div {
+                                                        h2{@extend %nosotrosh2;
+                                                          }
                                                     p{@extend %nosotrosp;
                                                     }
                                                 }
-                                            }
-        }
-}       
+                                                }
+                                                div{
+                                                    img{@extend %nosotrosimg;}
+                                                    div {
+                                                        h2{@extend %nosotrosh2;
+                                                            }
+                                                        p{@extend %nosotrosp;
+                                                        }
+                                                   }
+                                                }
+                     }
+} 
+}      
 
 
 .formulario{
     display:flex;
     justify-content: center;
+    align-items: center;
     color: rgb(173, 243, 243);
     background-color: rgb(185, 118, 248);
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+.formulario .boton { 
+    border-color:rgb(204, 174, 233);
+    background-color:aquamarine ;
+    color:blueviolet;
+}
+
+
+
 .requisitos{
            div{
             div{
@@ -725,24 +741,25 @@ height: 100%;
 .parraforequisitos{
            
             
-            h1{font-size: 25px;
+            h1{font-size: 35px;
             background-color: rgb(173, 241, 219);
             font-weight:bolder;
             color:rgb(162, 96, 216);
-            padding:10px;
+            padding:30px;
             text-align: center;
-            padding-top: 25px;
+            margin: 0;
         }
 
      
            p{
             background-color: rgb(173, 241, 219);
             font-size: 20px;
-            color:rgb(162, 96, 216);
+            color:rgb(154, 60, 231);
+            margin: 0;
+            padding: 25px;
             
             
             }
         
     }
         
-    

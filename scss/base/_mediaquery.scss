@@ -86,8 +86,11 @@ grid-row: span 1;
 {
 grid-column: span 2;
 }
-}
+.nosotros .nosotrosContenedor{
+    height: 650px;
 
+}
+}
 
 @media screen and (max-width:830px) 
 {
@@ -162,15 +165,26 @@ padding: 5px;
 {
 margin: 15px;
 }
+.nosotros .nosotrosContenedor{
+    height:1650px;
+    
+}
 
-.nosotrosFlex
+.nosotros .nosotrosContenedor .nosotrosFlex
 {
 flex-direction: column;
-padding-left: 25px;
-padding-right: 25px;
+
+}
 
 
 }
+@media screen and (max-width:675px)
+{
+    .nosotros .nosotrosContenedor{
+        height: 1750px;
+       
+    }
+       
 }
 
 @media screen and (max-width:630px)
@@ -253,6 +267,11 @@ grid-row: span 1;
 {
 flex-direction: column;
 }
+
+.parrafoRequisitos{
+    padding: 25px;
+}
+
 }
 
 @media screen and (max-width:530px) 
@@ -284,4 +303,26 @@ font-size: 20px;
 padding-left:25px;
 }
 }
+@media screen and (max-width:460px) 
+{
+    .nosotros .nosotrosContenedor{
+        height: 1780px;
+        padding: 25px;
+    }
+}
 
+@media screen and (max-width:410px) 
+{
+    .nosotros .nosotrosContenedor{
+        height: 1850px;
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width:390px) 
+{
+    .nosotros .nosotrosContenedor{
+        height: 1900px;
+        padding: 25px;
+    }
+}
