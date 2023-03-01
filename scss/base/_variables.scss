@@ -52,10 +52,10 @@ $font-size:
 }
 
 %caracteristicasp{
-    background-color: rgba(240, 237, 243, 0.5);
+    
     color:rgb(124, 70, 172);
     text-align: center;
-    font-weight:bolder;
+    font-size: 14px;
     padding: 4px;
     height: 27%;
 }
@@ -85,8 +85,8 @@ $font-size:
 }
 
 %footera{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin: 10px;
 }
 

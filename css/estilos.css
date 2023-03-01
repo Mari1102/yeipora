@@ -33,10 +33,9 @@
   font-size: 20px; }
 
 .caracteristicas .caracteristicasFlex div p {
-  background-color: rgba(240, 237, 243, 0.5);
   color: #7c46ac;
   text-align: center;
-  font-weight: bolder;
+  font-size: 14px;
   padding: 4px;
   height: 27%; }
 
@@ -59,8 +58,8 @@
   height: 27%; }
 
 footer .imagenes .redesSociales a img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin: 10px; }
 
 * {
@@ -100,7 +99,7 @@ header {
   align-items: center; }
   .hero h1 {
     color: #baf5e1;
-    font-size: 60px;
+    font-size: 40px;
     padding: 25px 25px;
     margin: bottom 15px; }
   .hero h2 {
@@ -159,30 +158,9 @@ header {
     padding: 25px; }
   .caracteristicas .caracteristicasFlex {
     display: flex;
-    justify-content: space-around; }
-    .caracteristicas .caracteristicasFlex div {
-      width: 234px;
-      height: 400px;
-      border: solid #b670f3; }
-      .caracteristicas .caracteristicasFlex div img {
-        width: 228px;
-        height: 250px; }
-      .caracteristicas .caracteristicasFlex div h3 {
-        color: #7c46ac;
-        text-align: center;
-        background-color: #baf5e1;
-        font-size: 20px; }
-    .caracteristicas .caracteristicasFlex div {
-      width: 234px;
-      height: 400px;
-      border: solid #b670f3; }
-      .caracteristicas .caracteristicasFlex div p {
-        background-color: rgba(240, 237, 243, 0.5);
-        color: #7c46ac;
-        text-align: center;
-        font-size: 14px;
-        padding: 4px;
-        height: 27%; }
+    flex-direction: 0;
+    justify-content: space-around;
+    align-items: 0; }
 
 .videoInformativo {
   display: flex;
@@ -264,8 +242,6 @@ img {
 .baño {
   display: flex;
   flex-direction: 0;
-  justify-content: space-between;
-  align-items: center;
   justify-content: space-between;
   align-items: center;
   margin: 25px 25px 25px 25px;
@@ -634,9 +610,15 @@ div p {
   padding-bottom: 25px; }
 
 .formulario .boton {
+  padding: 5px;
   border-color: #ccaee9;
   background-color: aquamarine;
-  color: blueviolet; }
+  color: blueviolet;
+  font-weight: bolder;
+  transition: 1s; }
+  .formulario .boton:hover {
+    color: aquamarine;
+    background-color: #b47be9; }
 
 .requisitos div div img {
   width: 80%;
@@ -834,13 +816,16 @@ footer {
   .caracteristicas .caracteristicasFlex div {
     margin: 15px; }
   .nosotros .nosotrosContenedor {
-    height: 1650px; }
+    height: 2600px; }
   .nosotros .nosotrosContenedor .nosotrosFlex {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .nosotros .nosotrosContenedor .nosotrosFlex div img {
+    height: 500px;
+    padding: 50px; } }
 
 @media screen and (max-width: 675px) {
   .nosotros .nosotrosContenedor {
-    height: 1750px; } }
+    height: 2700px; } }
 
 @media screen and (max-width: 630px) {
   header {
@@ -896,17 +881,17 @@ footer {
   .formulario {
     padding-left: 25px; } }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 465) {
   .nosotros .nosotrosContenedor {
     height: 1780px;
     padding: 25px; } }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 425px) {
   .nosotros .nosotrosContenedor {
-    height: 1850px;
+    height: 2800px;
     padding: 25px; } }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
   .nosotros .nosotrosContenedor {
-    height: 1900px;
+    height: 2900px;
     padding: 25px; } }
